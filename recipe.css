@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    /* Primary Colors */
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+
+    /* Neutral Colors */
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 88%;
+    display: block;
+}
+
+ul, li {
+    color: var(--Nutmeg);
+}
+a {
+    color: var(--Nutmeg);
+}
+
+body {
+    background-color: var(--Eggshell);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+    font-family: "Young Serif", serif;
+}
+
+.card {
+    max-width: 32vw;
+    height: auto;
+    background-color: var(--White);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 3px 3px 7px rgba(255, 255, 255, 0.1);
+}
+
+.card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    
+}
+
+.card-image img {
+    border-radius: 10px;
+}
+
+.header {
+    font-size: 30px;
+    font-weight: 900;
+    padding-left: 23px;
+    margin-bottom: 10px;
+}  
+
+p {
+    font-size: 10px;
+    font-weight: 600;
+    padding-left: 23px;
+    color: var(--wenge-Brown);
+}
+
+.prep-cell {
+    margin-top: 20px;
+    max-width: 29vw;
+    height: 18vh;
+    background-color: var(--Rose-White);
+    border-radius: 10px;
+    margin-left: 23px;
+    margin-bottom: 20px;
+}
+
+.prep-text {
+    padding-top: 10px;
+    color: var(--Dark-Raspberry);
+    font-size: 15px;
+    padding-left: 13px;
+    margin-bottom: 8px;
+    font-family: "Young Serif", serif;
+    font-weight: 700;
+}
+
+.prep-list {
+    padding-left: 35px;
+    font-size: 10px;
+    color: var(--wenge-Brown);
+}
+
+.text-1{
+    color: var(--Dark-Charcoal);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.Ingre {
+    padding-left: 23px;
+    font-family: "Young Serif", serif;
+}
+
+.head-2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--Nutmeg);
+    padding-bottom: 10px;
+}
+
+.ingre-list {
+    padding-left: 25px;
+    font-size: 13px; 
+}
+
+.ingre-list li {
+    list-style: var(--Nutmeg);
+}
+
+.text-2 {
+    color: var(--Dark-Charcoal);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.instruct {
+    padding-left: 23px;
+    font-family: "Young Serif", serif;
+}
+
+.head-3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--Nutmeg);
+    padding-bottom: 10px;
+}
+
+.ins-list {
+    padding-left: 15px;
+    font-size: 13px;
+}
+
+.ins-list li {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.text-3 {
+    color: var(--Dark-Charcoal);
+}
+
+.nutri {
+    padding-left: 25px;
+    font-family: "Young Serif", serif;
+}
+
+.head-4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--Nutmeg);
+    padding-bottom: 10px;
+}
+
+.nutri p {
+    color: var(--Dark-Charcoal);
+    padding-bottom: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.text-4 {
+    padding-left: 50px;
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--Dark-Charcoal);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.gap {
+    padding-left: 30vmin;
+    color: var(--Nutmeg);
+
+}
+
+.gap:nth-of-type(2) {
+    padding-left: 30vmin;
+}
+
+@media screen and (max-width: 567px) {
+ .card {
+    min-width: 80vw;
+ }   
+
+ .prep-cell {
+    min-width: 70vw;
+ }
+}
